@@ -42,8 +42,8 @@ export class ProductsFormComponent {
   validateForm: FormGroup<{
   productName: FormControl<string>;
   description: FormControl<string>;
-  quantityInStock: FormControl<string>;
-  unitPrice: FormControl<string>;
+  quantityInStock: FormControl<number>;
+  unitPrice: FormControl<number>;
     
 }>;
 submitForm(): void {
@@ -80,8 +80,8 @@ private apiService: ApiService,
   this.validateForm = this.fb.group({
     productName: ['', [required]],
     description: ['', [required]],
-    quantityInStock: ['', [required]],
-    unitPrice: ['', [required]]
+    quantityInStock: [0, [required]],
+    unitPrice: [0, [required]]
   });
 }
 }
