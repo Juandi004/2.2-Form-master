@@ -19,13 +19,14 @@
       <input nz-input formControlName="quantityInStock" placeholder="20" />
     </nz-form-control>
   </nz-form-item>
-  
   <nz-form-item>
-    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>Unit Price</nz-form-label>
-    <nz-form-control [nzSm]="16" [nzXs]="24">
-      <nz-date-picker formControlName="unitPrice"></nz-date-picker>
+    <nz-form-label [nzSpan]="7" nzRequired>Unit Price</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="unitPrice" placeholder="$0.50" />
     </nz-form-control>
   </nz-form-item>
+  
+  
  
   <nz-form-item>
     <nz-form-control [nzXs]="{ span: 24, offset: 0 }" [nzSm]="{ span: 16, offset: 8 }">
